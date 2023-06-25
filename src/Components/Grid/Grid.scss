@@ -1,0 +1,38 @@
+.Grid{
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "A A B"
+          "A A B"
+          "C D D"
+          "C D D";
+      }
+      
+      .A { grid-area: A; }
+      
+      .B { grid-area: B; }
+      
+      .C { grid-area: C; }
+      
+      .D { grid-area: D; }
+      
+}
+
+/* Media query for small screens */
+@media (max-width: 767px) {
+    .Grid{
+        .container {
+            grid-template-columns: 1fr; /* Set grid to single column */
+            grid-template-rows: auto; /* Reset rows to default */
+            grid-template-areas:
+              "A"
+              "B"
+              "C"
+              "D";
+          }
+    }
+
+  }
