@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+//IMPORT 
+@import "./Pages/Gallery/Gallery.scss";
+
 body{
   background: #1d1c1c;
   color: whitesmoke;
