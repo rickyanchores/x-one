@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>X one</h1>
+      <h1>X one template</h1>
       <Router>
         <Routes>
           <Route exact component={Home}/>
