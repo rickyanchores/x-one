@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home'
 import Nav from './Components/Nav/Nav'
 import Services from './Pages/Services/Services'
 import Gallery from './Pages/Gallery/Gallery'
+import Footer from './Pages/Footer/Footer'
 
 
 function App() {
@@ -13,12 +14,13 @@ function App() {
     <div className="App">
       <h1>X one</h1>
       <Router>
-        <Nav />
         <Routes>
           <Route exact component={Home}/>
-          <Route component={Gallery}/>
-          <Route component={Services}/>
         </Routes>
+        <Home />
+        <Gallery />
+        <Services />
+        <Footer />
       </Router>
     </div>
   )

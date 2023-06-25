@@ -19,11 +19,10 @@ const Nav = () => {
 
   return (
     <div className="Nav bg-slate-800 flex justify-between items-center">
-      <div className="logo">Nav</div>
-      <ul className="navlinks">
+      <ul className="navlinks flex flex-col justify-around items-center sm:flex-row">
         {navList.map((link) => (
-          <li className="link" key={link.name}>
-            <Link to={link.href}>{link.name}</Link>
+          <li className="link p-5" key={link.name}>
+            <Link to={link.href} className="block sm:inline">{link.name}</Link>
           </li>
         ))}
       </ul>
