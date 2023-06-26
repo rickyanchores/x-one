@@ -5,6 +5,7 @@ import Nav from './Components/Nav/Nav'
 import Services from './Pages/Services/Services'
 import Gallery from './Pages/Gallery/Gallery'
 import Footer from './Pages/Footer/Footer'
+import Banner from './Components/Banner/Banner'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact component={Home}/>
         </Routes>
         <Home />
+        <Banner />
         <Gallery />
         <Services />
         <Footer />
