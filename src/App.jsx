@@ -6,6 +6,7 @@ import Services from './Pages/Services/Services'
 import Gallery from './Pages/Gallery/Gallery'
 import Footer from './Pages/Footer/Footer'
 import Banner from './Components/Banner/Banner'
+import About from './Pages/About/About'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route exact component={Home}/>
         </Routes>
         <Home />
+        <About />
         <Banner />
         <Gallery />
         <Services />
