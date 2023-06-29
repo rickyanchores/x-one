@@ -10,6 +10,15 @@ import About from './Pages/About/About'
 import Team from './Pages/Team/Team'
 
 
+
+//IMPORT AOS
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,7 +27,7 @@ function App() {
       <h1>X one template</h1>
       <Router>
         <Routes>
-          <Route exact component={Home}/>
+          <Route component={Home}/>
         </Routes>
         <Home />
         <About />
@@ -32,4 +41,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
