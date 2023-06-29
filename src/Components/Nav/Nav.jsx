@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashLink as Link } from "react-router-hash-link";
+import {Link} from "react-scroll";
 
 const Nav = () => {
   const navList = [
@@ -22,7 +22,7 @@ const Nav = () => {
       <ul className="navlinks flex flex-col justify-around items-center sm:flex-row">
         {navList.map((link) => (
           <li className="link p-5" key={link.name}>
-            <Link smooth to={link.href} className="block sm:inline">{link.name}</Link>
+            <Link to={link.href} spy={true} smooth={true} offset={-10} duration={800} className="block sm:inline">{link.name}</Link>
           </li>
         ))}
       </ul>
