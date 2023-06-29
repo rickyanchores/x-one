@@ -7,6 +7,7 @@ import Gallery from './Pages/Gallery/Gallery'
 import Footer from './Pages/Footer/Footer'
 import Banner from './Components/Banner/Banner'
 import About from './Pages/About/About'
+import Team from './Pages/Team/Team'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Banner />
         <Gallery />
         <Services />
+        <Team />
         <Footer />
       </Router>
     </div>
